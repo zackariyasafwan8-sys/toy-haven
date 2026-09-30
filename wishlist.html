@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Manage your favourite Toy Haven products and collection status."
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Toy Haven | Favourites</title>
+
+    <link
+        rel="stylesheet"
+        href="CSS/style.css"
+    >
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="IMAGES/favicon.svg"
+    >
+
+    <link
+        rel="manifest"
+        href="manifest.json"
+    >
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <nav class="navbar">
+
+        <a
+            class="brand"
+            href="index.html"
+            aria-label="Toy Haven home"
+        >
+
+            <span
+                class="brand-logo"
+                aria-hidden="true"
+            >
+                TH
+            </span>
+
+            <span class="brand-name">
+                Toy Haven
+            </span>
+
+        </a>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="products.html">
+                    Products
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="wishlist.html"
+                    class="active"
+                >
+                    Favourites
+                </a>
+            </li>
+
+            <li>
+                <a href="cart.html">
+                    Cart
+                </a>
+            </li>
+
+            <li>
+                <a href="feedback.html">
+                    Feedbacks
+                </a>
+            </li>
+
+        </ul>
+
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            type="button"
+            aria-label="Open menu"
+        >
+            ☰
+        </button>
+
+    </nav>
+
+</header>
+
+
+
+<main class="wishlist-page">
+
+
+    <div class="page-heading">
+
+        <h1>
+            My Favourites
+        </h1>
+
+        <p>
+            Save products you like
+            and keep track of your collection.
+        </p>
+
+    </div>
+
+
+
+    <div class="wishlist-filters">
+
+        <button
+            class="wishlist-filter active"
+            type="button"
+            data-status="all"
+        >
+            All
+        </button>
+
+        <button
+            class="wishlist-filter"
+            type="button"
+            data-status="Interested"
+        >
+            Interested
+        </button>
+
+        <button
+            class="wishlist-filter"
+            type="button"
+            data-status="Owned"
+        >
+            Owned
+        </button>
+
+        <button
+            class="wishlist-filter"
+            type="button"
+            data-status="Not Interested"
+        >
+            Not Interested
+        </button>
+
+    </div>
+
+
+
+    <div
+        class="empty-state"
+        id="wishlistEmpty"
+    >
+
+        <h2>
+            No Favourite Products Yet
+        </h2>
+
+        <p>
+            Add products to your favourites
+            from the Products page.
+        </p>
+
+        <a
+            class="primary-btn"
+            href="products.html"
+        >
+            Browse Products
+        </a>
+
+    </div>
+
+
+
+    <div
+        class="empty-state"
+        id="wishlistNoResults"
+    >
+
+        <h2>
+            No Products Found
+        </h2>
+
+        <p>
+            No favourite products have this status.
+        </p>
+
+    </div>
+
+
+
+    <div
+        class="wishlist-grid"
+        id="wishlistGrid"
+    >
+    </div>
+
+
+</main>
+
+
+
+<footer>
+
+    <h2>
+        Toy Haven
+    </h2>
+
+    <p>
+        Toys • Games • Collectibles
+    </p>
+
+
+    <div class="footer-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="wishlist.html">
+            Favourites
+        </a>
+
+        <a href="cart.html">
+            Cart
+        </a>
+
+        <a href="feedback.html">
+            Feedbacks
+        </a>
+
+    </div>
+
+
+    <p>
+        &copy; 2026 Toy Haven.
+        All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="JS/script.js"></script>
+
+<script src="JS/pwa.js"></script>
+
+
+</body>
+
+</html>

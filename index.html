@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Toy Haven online toy store for figurines, toys, board games and diecast cars."
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Toy Haven | Home</title>
+
+    <link
+        rel="stylesheet"
+        href="CSS/style.css"
+    >
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="IMAGES/favicon.svg"
+    >
+
+    <link
+        rel="manifest"
+        href="manifest.json"
+    >
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <nav class="navbar">
+
+        <a
+            class="brand"
+            href="index.html"
+            aria-label="Toy Haven home"
+        >
+
+            <span
+                class="brand-logo"
+                aria-hidden="true"
+            >
+                TH
+            </span>
+
+            <span class="brand-name">
+                Toy Haven
+            </span>
+
+        </a>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a
+                    href="index.html"
+                    class="active"
+                >
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="products.html">
+                    Products
+                </a>
+            </li>
+
+            <li>
+                <a href="wishlist.html">
+                    Favourites
+                </a>
+            </li>
+
+            <li>
+                <a href="cart.html">
+                    Cart
+                </a>
+            </li>
+
+            <li>
+                <a href="feedback.html">
+                    Feedbacks
+                </a>
+            </li>
+
+        </ul>
+
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            type="button"
+            aria-label="Open menu"
+        >
+            ☰
+        </button>
+
+    </nav>
+
+</header>
+
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1 id="heroTitle">
+            Collect Your Favourite Figurines
+        </h1>
+
+        <p id="heroDescription">
+            Discover exciting collectible figurines
+            and characters at Toy Haven.
+        </p>
+
+        <a
+            class="hero-shop-btn"
+            href="products.html"
+        >
+            Shop Now
+        </a>
+
+
+        <div class="hero-dots">
+
+            <span class="hero-dot active"></span>
+
+            <span class="hero-dot"></span>
+
+            <span class="hero-dot"></span>
+
+            <span class="hero-dot"></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<main>
+
+
+    <section class="section">
+
+        <div class="container reveal">
+
+
+            <div class="section-heading">
+
+                <h2>
+                    Featured Products
+                </h2>
+
+                <p>
+                    Check out some of our popular products.
+                </p>
+
+            </div>
+
+
+
+            <div class="featured-grid">
+
+
+                <article class="card">
+
+                    <img
+                        class="product-image"
+                        src="IMAGES/action-figure.jpg"
+                        alt="Superhero Action Figure"
+                    >
+
+                    <div class="card-body">
+
+                        <p class="product-category">
+                            Figurines
+                        </p>
+
+                        <h3>
+                            Superhero Action Figure
+                        </h3>
+
+                        <p class="price">
+                            Rs. 4,500
+                        </p>
+
+
+                        <div class="card-actions">
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(1)"
+                            >
+                                Add to Cart
+                            </button>
+
+
+                            <button
+                                class="add-wishlist-btn"
+                                type="button"
+                                onclick="addToWishlist(1)"
+                            >
+                                Favourite
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="card">
+
+                    <img
+                        class="product-image"
+                        src="IMAGES/rc-car.jpg"
+                        alt="Remote Control Car"
+                    >
+
+                    <div class="card-body">
+
+                        <p class="product-category">
+                            Toys
+                        </p>
+
+                        <h3>
+                            Remote Control Car
+                        </h3>
+
+                        <p class="price">
+                            Rs. 6,500
+                        </p>
+
+
+                        <div class="card-actions">
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(3)"
+                            >
+                                Add to Cart
+                            </button>
+
+
+                            <button
+                                class="add-wishlist-btn"
+                                type="button"
+                                onclick="addToWishlist(3)"
+                            >
+                                Favourite
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="card">
+
+                    <img
+                        class="product-image"
+                        src="IMAGES/monopoly.jpg"
+                        alt="Monopoly Board Game"
+                    >
+
+                    <div class="card-body">
+
+                        <p class="product-category">
+                            Board Games
+                        </p>
+
+                        <h3>
+                            Monopoly
+                        </h3>
+
+                        <p class="price">
+                            Rs. 5,000
+                        </p>
+
+
+                        <div class="card-actions">
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(5)"
+                            >
+                                Add to Cart
+                            </button>
+
+
+                            <button
+                                class="add-wishlist-btn"
+                                type="button"
+                                onclick="addToWishlist(5)"
+                            >
+                                Favourite
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="section alt">
+
+        <div class="container reveal">
+
+            <div class="section-heading">
+
+                <h2>
+                    Featured Product of the Day
+                </h2>
+
+                <p>
+                    A different Toy Haven product
+                    is highlighted each day.
+                </p>
+
+            </div>
+
+
+            <div id="dailyProductCard"></div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <h3>
+        Toy Haven
+    </h3>
+
+    <p>
+        Toys • Games • Collectibles
+    </p>
+
+
+    <div class="footer-newsletter reveal">
+
+        <h3>
+            Join Our Newsletter
+        </h3>
+
+        <p>
+            Subscribe for Toy Haven product
+            news and updates.
+        </p>
+
+
+        <form id="newsletterForm">
+
+            <div class="newsletter-row">
+
+                <input
+                    type="email"
+                    id="newsletterEmail"
+                    placeholder="Enter your email"
+                    aria-label="Newsletter email"
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </div>
+
+
+            <p
+                id="newsletterMessage"
+                aria-live="polite"
+            ></p>
+
+        </form>
+
+    </div>
+
+
+
+    <div class="footer-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="wishlist.html">
+            Favourites
+        </a>
+
+        <a href="cart.html">
+            Cart
+        </a>
+
+        <a href="feedback.html">
+            Feedbacks
+        </a>
+
+    </div>
+
+
+    <p>
+        &copy; 2026 Toy Haven.
+        All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="JS/script.js"></script>
+
+<script src="JS/pwa.js"></script>
+
+
+</body>
+
+</html>

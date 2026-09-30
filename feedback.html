@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Contact Toy Haven, submit feedback and read frequently asked questions."
+    >
+
+    <meta
+        name="theme-color"
+        content="#2563eb"
+    >
+
+    <title>Toy Haven | Feedback</title>
+
+    <link
+        rel="stylesheet"
+        href="CSS/style.css"
+    >
+
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="IMAGES/favicon.svg"
+    >
+
+    <link
+        rel="manifest"
+        href="manifest.json"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Toy Haven home"
+            >
+
+                <span
+                    class="brand-logo"
+                    aria-hidden="true"
+                >
+                    TH
+                </span>
+
+                <span class="brand-name">
+                    Toy Haven
+                </span>
+
+            </a>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="wishlist.html">
+                        Favourites
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html">
+                        Cart
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="feedback.html"
+                        class="active"
+                    >
+                        Feedbacks
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                type="button"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================
+         FEEDBACK PAGE
+    ========================================== -->
+
+    <main class="feedback-page">
+
+
+        <div class="page-heading">
+
+            <h1>
+                Feedback &amp; Contact
+            </h1>
+
+            <p>
+                We would love to hear from you.
+            </p>
+
+        </div>
+
+
+
+        <section class="feedback-main">
+
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="panel reveal">
+
+                <h2>
+                    Contact Toy Haven
+                </h2>
+
+                <p>
+                    Need help with a product or your order?
+                    Contact us using the details below.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <h3>
+                        Email
+                    </h3>
+
+                    <p>
+                        support@toyhaven.lk
+                    </p>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <h3>
+                        Phone
+                    </h3>
+
+                    <p>
+                        +94 11 234 5678
+                    </p>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <h3>
+                        Location
+                    </h3>
+
+                    <p>
+                        Colombo, Sri Lanka
+                    </p>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <h3>
+                        Opening Hours
+                    </h3>
+
+                    <p>
+                        Monday - Saturday
+                    </p>
+
+                    <p>
+                        9:00 AM - 6:00 PM
+                    </p>
+
+                </div>
+
+
+                <div class="about-box">
+
+                    <h3>
+                        About Toy Haven
+                    </h3>
+
+                    <p>
+                        Toy Haven is an online toy store
+                        offering figurines, toys,
+                        board games and diecast model cars.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FEEDBACK FORM -->
+
+            <div class="panel reveal">
+
+                <h2>
+                    Send Feedback
+                </h2>
+
+
+                <form
+                    id="feedbackForm"
+                    novalidate
+                >
+
+
+                    <div class="feedback-form-group">
+
+                        <label for="feedbackName">
+                            Full Name
+                        </label>
+
+                        <input
+                            id="feedbackName"
+                            type="text"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                        >
+
+                        <small
+                            class="feedback-error"
+                            id="feedbackNameError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <div class="feedback-form-group">
+
+                        <label for="feedbackEmail">
+                            Email
+                        </label>
+
+                        <input
+                            id="feedbackEmail"
+                            type="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                        >
+
+                        <small
+                            class="feedback-error"
+                            id="feedbackEmailError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <div class="feedback-form-group">
+
+                        <label for="feedbackMessage">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="feedbackMessage"
+                            rows="6"
+                            placeholder="Write your feedback here..."
+                        ></textarea>
+
+                        <small
+                            class="feedback-error"
+                            id="feedbackMessageError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <button
+                        class="feedback-submit-btn"
+                        type="submit"
+                    >
+                        Send Feedback
+                    </button>
+
+                </form>
+
+
+
+                <div
+                    class="feedback-success"
+                    id="feedbackSuccess"
+                    aria-live="polite"
+                >
+
+                    <strong>
+                        Thank you!
+                    </strong>
+
+                    <p>
+                        Your feedback has been
+                        submitted successfully.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             FAQ
+        ====================================== -->
+
+        <section class="panel faq-section reveal">
+
+            <h2 style="text-align: center;">
+                Frequently Asked Questions
+            </h2>
+
+
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    <span>
+                        How do I add a product to my cart?
+                    </span>
+
+                    <span class="faq-symbol">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        Go to the Products page and
+                        click Add to Cart on the
+                        product you want.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    <span>
+                        Can I save products for later?
+                    </span>
+
+                    <span class="faq-symbol">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        Yes. Click the Favourite button
+                        to save the product to your
+                        Favourites page.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    <span>
+                        What payment methods are available?
+                    </span>
+
+                    <span class="faq-symbol">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        Toy Haven provides Card Payment
+                        and Cash on Delivery options
+                        during checkout.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    <span>
+                        Will my cart remain after refreshing?
+                    </span>
+
+                    <span class="faq-symbol">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        Yes. The shopping cart is stored
+                        in your browser using localStorage.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    <span>
+                        Can I change my favourite product status?
+                    </span>
+
+                    <span class="faq-symbol">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    <p>
+                        Yes. Products can be marked as
+                        Interested, Owned or Not Interested
+                        on the Favourites page.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <h3>
+            Toy Haven
+        </h3>
+
+        <p>
+            Toys • Games • Collectibles
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="wishlist.html">
+                Favourites
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+            <a href="feedback.html">
+                Feedbacks
+            </a>
+
+        </div>
+
+
+        <p>
+            &copy; 2026 Toy Haven.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="JS/script.js"></script>
+
+    <script src="JS/pwa.js"></script>
+
+
+</body>
+
+</html>
